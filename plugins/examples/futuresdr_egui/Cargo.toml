@@ -1,0 +1,15 @@
+[package]
+name = "futuresdr_egui"
+version = "0.1.0"
+edition = "2021"
+authors = ["Bastian Bloessl <mail@bastibl.net"]
+license = "Apache-2.0"
+description = "A simple plugin with FutureSDR and an egui GUI"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+nih_plug = { path = "../../../", features = ["assert_process_allocs", "standalone"] }
+nih_plug_egui = { path = "../../../nih_plug_egui" }
+futuresdr = "0.0.32"

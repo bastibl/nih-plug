@@ -607,7 +607,7 @@ fn target_base(cross_compile_target: Option<&str>) -> Result<PathBuf> {
     match cross_compile_target {
         // Unhandled targets will already be handled in `compilation_target`
         Some(target) => Ok(Path::new("target").join(target)),
-        None => Ok(PathBuf::from("target")),
+        None => Ok(PathBuf::from("/home/basti/.cargo/target")),
     }
 }
 

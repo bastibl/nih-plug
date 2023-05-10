@@ -21,6 +21,7 @@ members = [
   "cargo_nih_plug",
   "xtask",
 
+  "plugins/examples/futuresdr_egui",
   "plugins/examples/gain",
   "plugins/examples/gain_gui_egui",
   "plugins/examples/gain_gui_iced",
